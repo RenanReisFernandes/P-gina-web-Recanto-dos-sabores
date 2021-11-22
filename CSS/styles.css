@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+
+#background{
+    background-image: url(../IMAGENS/fundorestaurante3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.container{
+    display: block;
+    width: auto;
+    margin: 0 auto;
+    grid-template-columns: 1vh;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "header header header"
+    "section section section"
+    "footer footer footer";
+    text-align: center;
+    min-height: 70vh;
+    padding: 50px;
+}
+
+.Style-p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-style: italic;
+    padding-top: 80px;
+}
+
+.container-products{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 100px;
+   
+}
+
+
+.product-image{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    background-position: center;
+    background-size: cover;
+}
+
+body{
+    background-color: #d3d7da;
+}
+
+td img{
+    height: 200px;
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+td img:hover{
+    height: 400px;
+    width: 500px;
+    transition: 0.5s;
+}
+
+
+#header{
+    grid-area: header;
+    height: 20vh;
+    margin-bottom: 20px;
+}
+
+#header nav{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.imagefaded{
+    background-image: url(../IMAGENS/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.header-image{
+
+    background-image: url(../IMAGENS/cabeca1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.color li a{
+    color:#471709;
+  
+   
+}
+
+.line{
+    border-bottom: 1px solid #666;
+}
+
+.description{
+    color: hsl(0, 98%, 51%);
+}
+
+.btn{
+    background-color: #fbd4c3;
+    border: 3px solid #471709;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.name-dishe{
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.price-dishe{
+    font-weight: bold;
+    font-family: cursive;
+}
+
+
+#section{
+    grid-area: section;
+    height: 70vh;
+    
+}
+
+
+#section h2{
+    padding-top: 200px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 23px;
+    transition: 0.5s;
+}
+
+#section h2:hover{
+    font-size: 33px;
+    transition: 0.5s;
+}
+
+
+#section h3{
+    text-align: center;
+    text-justify: auto;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+#section h3 p{
+    text-align: center;
+    text-justify: auto;
+    font-size: 20px;
+}
+
+#whatsappBtn img{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 900px;
+    transition: 0.5s;
+}
+
+#whatsappBtn img:hover{
+    width: 260px;
+    height: 260px;
+    transition: 0.5s;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+nav img{
+    height: 200px;
+    width: 200px;
+    
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+ul li{
+    margin-right: 20px;
+}
+
+li a{
+    font-size: 20px;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    transition: 0.5s;
+    color:#471709;
+}
+
+li a:hover{
+    
+    font-size: 25px;
+    color: hsl(0, 98%, 51%);
+    transition: 0.5s;
+}
+
+/*FORM*/
+
+form{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
+}
+
+fieldset{
+    border: none;
+}
+
+.legend{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form-group{
+    margin: 9px auto;
+}
+
+label{
+    width: 150px;
+    display: inline-block;
+}
+
+input[type="text"], input[type="email"]{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input:invalid{
+    border-color: #900;
+    box-shadow: 0px 0px 3px #900;
+}
+
+input:focus{
+    outline: none;
+}
+
+.footer{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.footer img{
+    height: 100px;
+    width: 500;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+    border-top: 1px solid #666;
+    margin-top: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#footer img{
+    height: 40px;
+    width: 40px;
+    align-items: flex-end;
+    
+}
+
+#footer img a{
+    height: 40;
+    width: 40;
+    transition: 0.5s;
+}
+
+#footer p{
+    margin-top: 40px;
+    margin-left: 600px;
+}
+
+
+
+
